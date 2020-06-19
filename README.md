@@ -1,27 +1,51 @@
-# AngularHttpclient
+# My Angular Store
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+
+I used in this project HttpClient, [Material Design](https://material.angular.io/guide/getting-started), [Faker data](https://github.com/Marak/faker.js), Pagination, mocking a REST API and eventually [deployed it on Firebase](https://firebase.google.com/docs/web/setup?hl=ru).
+
+## Json server
+
+Install json-server from npm in your project:
+
+```sh
+$ npm install --save json-server
+```
+
+And run it:
+
+```sh
+$ npm run server
+```
+
+Server will be available from the  `http://localhost:3000/`  address.
+
+## Faker data
+
+Install Faker.js from npm:
+
+```sh
+npm install faker —save
+```
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Develoy on Firebase
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You should have created a [Firebase](https://firebase.google.com/docs/web/setup?hl=ru) project before deploying
 
-## Build
+Run it:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```sh
+ng add @angular/fire
+```
 
-## Running unit tests
+The CLI will prompt you to Paste authorization code here: and will open your default web browser and ask you to give Firebase CLI permissions to administer your Firebase account.
+After you sign in with the Google account associated with your Firebase account, you'll be given the authorization code.
+Next, you'll be select your project and deploy your application to Firebase:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```sh
+ng deploy
+```
