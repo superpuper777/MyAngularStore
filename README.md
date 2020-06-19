@@ -25,7 +25,7 @@ Server will be available from the  `http://localhost:3000/`  address.
 Install Faker.js from npm:
 
 ```sh
-npm install faker —save
+$ npm install faker —save
 ```
 
 ## Development server
@@ -39,7 +39,7 @@ You should have created a [Firebase](https://firebase.google.com/docs/web/setup?
 Run it:
 
 ```sh
-ng add @angular/fire
+$ ng add @angular/fire
 ```
 
 The CLI will prompt you to Paste authorization code here: and will open your default web browser and ask you to give Firebase CLI permissions to administer your Firebase account.
@@ -47,5 +47,5 @@ After you sign in with the Google account associated with your Firebase account,
 Next, you'll be select your project and deploy your application to Firebase:
 
 ```sh
-ng deploy
+$ ng deploy
 ```
