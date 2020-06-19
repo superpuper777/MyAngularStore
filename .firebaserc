@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "myangularstore-92c8d": {
+      "hosting": {
+        "angular-httpclient": [
+          "myangularstore-92c8d"
+        ]
+      }
+    }
+  }
+}
